@@ -1,0 +1,6 @@
+class Test {
+    void foo() {
+        int b;
+        b = a; // Error, 'a' is undefined.
+    }
+}

@@ -1,0 +1,5 @@
+class Test {
+    int foo(int a, boolean b) { // This should be fine.
+        return a;
+    }
+}

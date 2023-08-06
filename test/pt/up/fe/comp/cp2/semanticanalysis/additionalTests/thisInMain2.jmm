@@ -1,0 +1,7 @@
+class Test {
+    int a;
+
+    public static void main(String[] args) {
+        this.a = 5; // Using 'this' inside main method.
+    }
+}

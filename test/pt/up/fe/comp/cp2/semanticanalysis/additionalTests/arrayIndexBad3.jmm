@@ -1,0 +1,9 @@
+class Test {
+    public static void main(String[] args) {
+        int[] a;
+        int b;
+        a = new int[10];
+        b = a[true]; // Error, array index is not an integer.
+        return 0;
+    }
+}

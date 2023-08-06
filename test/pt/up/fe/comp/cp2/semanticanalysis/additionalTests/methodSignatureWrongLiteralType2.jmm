@@ -1,0 +1,5 @@
+class Test {
+    int foo(int a, boolean b) {
+        return true; // Error, return type should be int, not boolean.
+    }
+}

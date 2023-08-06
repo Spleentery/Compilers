@@ -1,0 +1,7 @@
+class Test {
+    int a;
+
+    static void staticMethod() {
+        a = 10; // error: can't access non-static field from static method
+    }
+}

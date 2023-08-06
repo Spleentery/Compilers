@@ -1,0 +1,8 @@
+class Test {
+    int[] a;
+    void foo() {
+        int b;
+        a = new int[10];
+        b = a[5]; // This should be fine.
+    }
+}

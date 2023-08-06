@@ -1,0 +1,12 @@
+class ArrayIndexBad2 {
+
+
+    public boolean badIndex() {
+        boolean b;
+        int[] arr;
+        arr = new int[5];
+        b = arr[true];
+
+        return b;
+    }
+}

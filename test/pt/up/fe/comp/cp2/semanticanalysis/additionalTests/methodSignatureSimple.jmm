@@ -1,0 +1,7 @@
+class Test {
+    void foo(int a, boolean b) {}
+
+    void callFoo() {
+        foo(1, true);
+    }
+}

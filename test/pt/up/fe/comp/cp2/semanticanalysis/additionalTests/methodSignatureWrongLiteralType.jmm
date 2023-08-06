@@ -1,0 +1,7 @@
+class Test {
+    void foo(int a) {}
+
+    void callFoo() {
+        foo(true); // error: wrong literal type, expected int
+    }
+}

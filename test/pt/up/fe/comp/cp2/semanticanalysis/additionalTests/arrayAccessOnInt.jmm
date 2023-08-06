@@ -1,0 +1,7 @@
+class Test {
+    int a;
+    void foo() {
+        int b;
+        b = a[5]; // Error, trying to access an array element on an integer.
+    }
+}

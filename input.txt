@@ -1,0 +1,25 @@
+import lib.sublib.special;
+
+class Classic extends SuperClassic {
+
+    public static int process(int choices, boolean pickFirst) {
+
+        int temp1;
+        int temp2;
+
+        temp1 = 10;
+        temp2 = 15;
+
+        if (0 < temp1 * temp2) {
+            while (!(temp1 < temp2) && true || false) {
+                temp1 = temp1 + 1;
+            }
+            result1 = temp1;
+
+        } else {
+            result1 = temp1;
+        }
+
+        return result1 + result2;
+    }
+}

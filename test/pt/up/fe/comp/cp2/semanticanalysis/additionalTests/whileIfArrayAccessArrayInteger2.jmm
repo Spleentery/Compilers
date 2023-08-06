@@ -1,0 +1,13 @@
+class Test {
+    int[] a;
+    void foo() {
+        int i;
+        a = new int[10];
+        i = 0;
+        while(i < 10) {
+            if(a[i] > 5) {
+                // ...
+            }
+         }
+    }
+}

@@ -1,0 +1,6 @@
+class Test {
+    int[] a;
+    void foo() {
+        a = 10; // Error, trying to assign integer to an array.
+    }
+}

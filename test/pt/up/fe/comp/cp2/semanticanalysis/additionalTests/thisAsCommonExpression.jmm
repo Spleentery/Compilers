@@ -1,0 +1,7 @@
+class Test {
+    Test a;
+
+    void foo() {
+        a = this;
+    }
+}

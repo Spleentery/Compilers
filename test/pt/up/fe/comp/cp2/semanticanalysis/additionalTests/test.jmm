@@ -1,0 +1,11 @@
+class Test {
+    int[] a;
+    void foo() {
+        a = new int[10];
+        while(true) {
+            if(a[5]) { // Error, 'if' condition is not a boolean.
+                // ...
+            }
+        }
+    }
+}

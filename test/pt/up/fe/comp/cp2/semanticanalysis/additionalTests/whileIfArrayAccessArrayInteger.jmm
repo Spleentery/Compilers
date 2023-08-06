@@ -1,0 +1,9 @@
+class Test {
+    void foo() {
+        int[] arr;
+        arr = new int[5];
+        while (arr[2]) { // 'arr[2]' is integer, not boolean.
+            // ...
+        }
+    }
+}

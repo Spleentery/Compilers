@@ -1,0 +1,12 @@
+class Test {
+    int a;
+    boolean b;
+    int[] arr;
+
+    void correctAssignments() {
+        a = 10;
+        b = false;
+        arr = new int[5];
+        arr[0] = 1;
+    }
+}
