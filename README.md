@@ -11,7 +11,7 @@ The Grammar is defined in .g4 file using ANTLR. The grammar rules simulate regul
 
 ![grammar](docs/grammar.png)
 
-Here you can see an example of parse tree defined with grammar.
+Here you can see an AST - Abstract Syntax Tree, defined with grammar.
 ![parse-tree](docs/parse-tree.png)
 
 ### Symbol Table
