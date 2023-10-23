@@ -4,19 +4,16 @@ grammar Javamm;
     package pt.up.fe.comp2023;
 }
 
-//INTEGER : [0-9]+ ;
-INTEGER : [0]|[1-9][0-9]* ; // CHANGES
+INTEGER : [0]|[1-9][0-9]* ;
 ID : [a-zA-Z_$][a-zA-Z_0-9$]* ;
 
 WS : [ \t\n\r\f]+ -> skip ;
 
-//SLC : '//' ~[\n]* -> skip ;
 SLC
-    : '/*' .*? '*/' -> skip // CHANGES
+    : '/*' .*? '*/' -> skip
     ;
-//MLC : '/*' .*? '*/' -> skip ;
 MLC
-    :   '//' ~('\n'|'\r')* -> skip // CHANGES
+    :   '//' ~('\n'|'\r')* -> skip
     ;
 
 program
@@ -88,7 +85,6 @@ statement
     | name = ID '[' expression ']' '=' expression ';' #AccessAndAssignStatement
     ;
 
-// CHANGES
 expression
     : '(' expression ')' #Parentheses
     | op='!' expression #UnaryOp

@@ -1,32 +1,32 @@
 # Compilers Project
 
-## Turn In Notes:
+## Description
 
-| GROUP  | 7F | Work % |
-| ------------- | ------------- | :-------------: |
-| David Burchakov  | up202203777@up.pt  | 33% |
-| Tomás Pacheco Pires  | up202008319@up.pt  | 33% |
-| Vicente Salvador Martínez Lora  | up202006950@up.pt  | 33% |
+Java-like compiler, including Grammar using antl4, SymbolTable, Semantic Analysis, OLLIR and Jasmin.
+Done as a part of the Faculty of Engineering of the University of Porto curriculum.
 
-### Overall Self Evaluation: 14
+### Grammar
 
-We would like to point out that our group was the result of a mix between two groups. There were 2 colleagues who left the course mid Semester affecting the progress of the project. Furthermore, this had direct impact on the development of our semantics and resulted in time wasted, as **we had to adapt the grammar and semantics from one group to the one from the other**.
+The Grammar is defined in .g4 file using ANTLR. The grammar rules simulate regular Java programming language.
 
-(extra element) In order to test our semantics, new tests were created based on the names of the private tests (class _AdditionalSemanticTests_).
+![grammar](docs/grammar.png)
 
-| Component | Grade |
-| ------------- |:-----:|
-| Semantics |  15   |
-| Ollir |   9   |
-| Jasmin |  17   |
+Here you can see an example of parse tree defined with grammar.
+![parse-tree](docs/parse-tree.png)
 
+### Symbol Table
 
---------------------------------------------------------------------------------------------
+A symbol table allows us to save and keep track of declared variables, classes, objects, functions etc.
+
+![symbol table](docs/symbolTable.png)
 
 
 ## Project Info:
 
 For this project, you need to install [Java](https://jdk.java.net/), [Gradle](https://gradle.org/install/), and [Git](https://git-scm.com/downloads/) (and optionally, a [Git GUI client](https://git-scm.com/downloads/guis), such as TortoiseGit or GitHub Desktop). Please check the [compatibility matrix](https://docs.gradle.org/current/userguide/compatibility.html) for Java and Gradle versions.
+
+Project uses ANTLR v4 plugin
+
 
 ## Project setup
 
@@ -71,3 +71,27 @@ The testing framework, which uses the class ``pt.up.fe.comp.TestUtils``, has met
 In order for the test class to find your implementations for the stages, it uses the file ``config.properties`` that is in root of your repository. It has four fields, one for each stage (i.e. ``ParserClass``, ``AnalysisClass``, ``OptimizationClass``, ``BackendClass``), and initially it only has one value, ``pt.up.fe.comp2023.SimpleParser``, associated with the first stage.
 
 During the development of your compiler you will update this file in order to setup the classes that implement each of the compilation stages.
+
+
+
+
+
+## Turn In Notes:
+
+| GROUP  | 7F | Work % |
+| ------------- | ------------- | :-------------: |
+| David Burchakov  | up202203777@up.pt  | 33% |
+| Tomás Pacheco Pires  | up202008319@up.pt  | 33% |
+| Vicente Salvador Martínez Lora  | up202006950@up.pt  | 33% |
+
+### Overall Self Evaluation: 14
+
+We would like to point out that our group was the result of a mix between two groups. There were 2 colleagues who left the course mid Semester affecting the progress of the project. Furthermore, this had direct impact on the development of our semantics and resulted in time wasted, as **we had to adapt the grammar and semantics from one group to the one from the other**.
+
+(extra element) In order to test our semantics, new tests were created based on the names of the private tests (class _AdditionalSemanticTests_).
+
+| Component | Grade |
+| ------------- |:-----:|
+| Semantics |  15   |
+| Ollir |   9   |
+| Jasmin |  17   |
