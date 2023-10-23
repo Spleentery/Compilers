@@ -23,7 +23,7 @@ A symbol table allows us to save and keep track of declared variables, classes, 
 
 ### Semantic Analysis
 
-In order to understand the semantics e.g meaning of the code, we created a semantic visitor.
+In order to understand the semantics i.e meaning of the code, we created a semantic visitor.
 The semantics of a programming language describes what the code means and how it behaves when executed.
 ![semantic visitor](docs/semantics.png)
 
