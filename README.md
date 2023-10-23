@@ -27,6 +27,15 @@ In order to understand the semantics i.e meaning of the code, we created a seman
 The semantics of a programming language describes what the code means and how it behaves when executed.
 ![semantic visitor](docs/semantics.png)
 
+### Jasmin
+
+Jasmin is a tool that helps to write Java bytecode directly. Java bytecode is a low-level representation of Java programs that the Java Virtual Machine (JVM) understands and executes.
+
+Simply put, Jasmin allows to write code in a more human-readable format, and then it helps you convert it into the format that the Java Virtual Machine understands.
+
+![jasmin](docs/jasmin.png)
+
+
 ## Project Info:
 
 For this project, you need to install [Java](https://jdk.java.net/), [Gradle](https://gradle.org/install/), and [Git](https://git-scm.com/downloads/) (and optionally, a [Git GUI client](https://git-scm.com/downloads/guis), such as TortoiseGit or GitHub Desktop). Please check the [compatibility matrix](https://docs.gradle.org/current/userguide/compatibility.html) for Java and Gradle versions.
