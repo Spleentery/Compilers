@@ -14,6 +14,8 @@ The Grammar is defined in .g4 file using ANTLR. The grammar rules simulate regul
 Here you can see an AST - Abstract Syntax Tree, defined with grammar.
 ![parse-tree](docs/parse-tree.png)
 
+*see Javamm.g4*
+
 ### Symbol Table
 
 A symbol table allows us to save and keep track of declared variables, classes, objects, functions etc.
@@ -27,6 +29,16 @@ In order to understand the semantics i.e meaning of the code, we created a seman
 The semantics of a programming language describes what the code means and how it behaves when executed.
 ![semantic visitor](docs/semantics.png)
 
+*see ASemanticVisitor.java*
+
+### OLLIR
+
+"Optimized Low-Level Intermediate Representation" 
+
+OLLIR Is a middle step when translating code. We start with high-level code that's easy for humans to understand, and we want to convert it into something that a computer can run efficiently. OLLIR is like a bridge between these two. It's a way to represent the code in a simpler, more optimized form, making it easier for the computer to execute. This step helps make the final code faster and more efficient.
+
+*see OllirVisitor.java*
+
 ### Jasmin
 
 Jasmin is a tool that helps to write Java bytecode directly. Java bytecode is a low-level representation of Java programs that the Java Virtual Machine (JVM) understands and executes.
@@ -35,6 +47,7 @@ Simply put, Jasmin allows to write code in a more human-readable format, and the
 
 ![jasmin](docs/jasmin.png)
 
+*see JasminBackendImplemented.java*
 
 ## Project Info:
 
